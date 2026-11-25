@@ -11,10 +11,10 @@ import { join } from "node:path";
 const OUT_DIR = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 const MAX_CHARS = 200;
 
-// The phone's weekly Screen Time report: the only way to read it is to add to it.
+// v2: the battery at 74% — it clocks out at 4 p.m. like an employee with boundaries.
 const ENTRY =
-  "Every Sunday at 9:00 my phone sends a Screen Time report shaming me for using " +
-  "it six hours a day. I read it twice. That counts too.";
+  "My phone's battery health is 74% after two years. It dies at 4 p.m. sharp, " +
+  "like an employee with boundaries. I respect it.";
 
 function fail(message: string): never {
   console.error("entry.txt rejected: " + message);
